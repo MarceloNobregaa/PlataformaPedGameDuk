@@ -3,25 +3,25 @@ package com.MarceloNotebook.PlataformaPedGameDukgit;
 import javax.swing.JOptionPane;
 
 public class Jogador {
-	String nome;
-	int pontuacao;
+	String nome = "";
+    int pontuacao = 0;
 
-	public void setNome() {
-		this.nome = JOptionPane.showInputDialog("Digite seu Nome");
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	}
+    public void setPontuacao(int pontuacao) {
+        this.pontuacao = pontuacao;
 
-	public void setPontuacao(int pontuacao) {
-		this.pontuacao = pontuacao;
+    }
 
-	}
+    public String getNome() {
+        return this.nome;
+    }
 
-	public String getNome() {
-		return this.nome;
+    public int getPontuacao() {
+        return this.pontuacao;
+    }
 
-	}
-
-	public int getPontuacao() {
-		return this.pontuacao;
-	}
 }
+
