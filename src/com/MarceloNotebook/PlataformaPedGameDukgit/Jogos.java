@@ -3,14 +3,24 @@ package com.MarceloNotebook.PlataformaPedGameDukgit;
 import javax.swing.JOptionPane;
 
 public class Jogos {
-	String c;
-	int cod;
+	int pontuacao = 0;
 
-	public void escolheJogo() {
-		this.c = JOptionPane.showInputDialog("GameDuque \n"
-				+ "1- APRENDA COMPRANDO \n" + "2- JOGO DAS LETRAS\n");
-		this.cod = Integer.parseInt(c);
-		// TODO Auto-generated method stub
+	public String aprendaComprando(String nome, Jogador jogador) {
 
+		pontuacao = 5;
+		jogador.setNome(nome);
+		jogador.setPontuacao(pontuacao);
+
+		return "Aprenda Comprando";
 	}
+
+	public String jogoDasLetras(String nome, Jogador jogador) {
+
+		pontuacao = 5;
+		jogador.setNome(nome);
+		jogador.setPontuacao(pontuacao);
+
+		return "Jogo das Letras";
+	}
+
 }
