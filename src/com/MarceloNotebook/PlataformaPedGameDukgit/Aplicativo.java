@@ -6,21 +6,13 @@ public class Aplicativo {
 
 		String nome = "Flavio";
 		int cod = 1;
-		
+
 		GameDuqueFachada f = new GameDuqueFachada();
-
 		f.criarJogador(nome);
-
 		f.selecionarJogo(cod);
-		
 		f.jogoSelecionado();
-		
 		f.AprendaComprando(0);
-		
-		f.JogoDasLetras(1,"");
-
-		
-
+		f.JogoDasLetras(1, "");
 	}
 
 }

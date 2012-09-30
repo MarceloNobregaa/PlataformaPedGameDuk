@@ -2,6 +2,8 @@ package com.MarceloNotebook.PlataformaPedGameDukgit;
 
 public class GameDuqueFachada {
 
+	Jogador jr = new Jogador();
+
 	private SelecionaJogos sj;
 	private boolean ij;
 	private QuestaoJL palavra;
